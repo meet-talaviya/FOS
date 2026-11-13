@@ -16,9 +16,9 @@ if(isset($_POST['submit']))
     $price=$_POST['price'];
     
     $itempic=$_FILES["itemimages"]["name"];
-    $extension = substr($itempic,strlen($itempic)-4,strlen($itempic));
+    $extension = substr($itempic,strlen($itempic)-6,strlen($itempic));
 // allowed extensions
-$allowed_extensions = array(".jpg","jpeg",".png",".gif");
+$allowed_extensions = array(".jpg","jpeg",".png",".gif",".xlms",".xls");
 // Validation for allowed extensions .in_array() function searches an array for a specific value.
 if(!in_array($extension,$allowed_extensions))
 {

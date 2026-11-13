@@ -48,7 +48,7 @@ if(isset($_POST['login']))
             </div>
             <div class="col-md-6">
                 <div class="ibox-content">
-                     <p style="font-size:16px; color:red" align="center"> <?php if($msg){
+                     <p style="font-size:16px; color:red"> <?php if($msg){
     echo $msg;
   }  ?> </p>
                     <form class="m-t" role="form" action="" method="post" name="login">
